@@ -1,0 +1,79 @@
+<html>
+<head></head>
+
+<body>
+    <label for="lname">Enter your Phrase!</label><br>
+    <input type="text" id="phrase" name="phrase" value="Shetty"><br><br>
+    <input type="submit" value="Generate" onclick="getPhrase();"> <br><br>
+    <label id="output"></label>
+
+
+
+    <script>
+        function getPhrase(){
+            // Array of Good Advice!
+            var goodAdvice = [
+                "Avoid public transportation","Alcohol-based hand sanitizer with at least 60% alcohol to be used to wash hands",,//A
+                "Break the chain!","Be proud and support our caregivers",,//B
+                "Cover your mouth and nose with a tissue", "Connect with others",,//C
+                "Disinfect High Use Surfaces", "Distance yourself from others physically, not mentally!",,//D
+                "Enrich your diet with nutritous Food", "Enjoy the nature, from a distance!",,//E
+                "Flatten the curve!","Focus on good postive thoughts!",,//F
+                "Good food is the key to good health","Go Corona Go",,//G
+                "Help each other",,,//H
+                "Isolate yourself physically only, keep in touch though!",,,//I
+                "Just stay home",,,//J
+                "Keep your hands away from your face!",,,//K
+                "Let us stay calm, and keep ourselves happy too!",,,//L
+                "Masks are only needed when you're sick!", "Make time to unwind!",,//M
+                "Next year is gonna be amazing!",,,//N
+                "Optimise your time for best productivity from home!",,,//O
+                "Practice good hand hygiene",,,//P
+                "Quit stressing about the news, its gonna get better!",,,//Q
+                "Rest enough, your body needs sleep ",,,//R
+                "Stay home", "Sneeze into your elbows",,//S
+                "Take care of yourself and your family",,,//T
+                "Urge others to stay home",,,//U
+                "Thank our doctors, caregivers and public servants!",,,//V
+                "Wash your hands often with soap and water for at least 20 seconds", "Work from home, please!",,//W
+                "Xcuse yourself, if you're feeling sick!",,,//X
+                "You are stronger than you think!",,,//Y
+                "Zoom or Slack or Messenger or Hangouts only!",,,//Z
+            ];
+
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("phrase").value.toLowerCase();
+            var stringAr = [];
+            var completed = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+            var message = "";
+            var goodArrayIdx;
+            var currMessage;
+            var currIdx;
+
+            stringAr = inputVal.split("");
+            for (var i = 0; i < stringAr.length; i++) 
+            {
+                currMessage = ""
+                // convert to char
+                currIdx = stringAr[i].charCodeAt(0) - 97;
+                // Only abc please
+                if((currIdx<26)&&(currIdx>=0))
+                {
+                    // idx = 3 advices per letter               
+                    goodArrayIdx = 3*currIdx + completed[currIdx];
+                    currMessage = stringAr[i].toUpperCase() + " - " + goodAdvice[goodArrayIdx];
+                    if (completed[currIdx] < 3)
+                    {
+                        completed[currIdx] = completed[currIdx] + 1;
+                    }
+                }
+                
+                message = message + currMessage + "<br>";
+            }
+            // Displaying the value
+            document.getElementById("output").innerHTML = message;
+        }
+    </script>
+</body>
+
+</html>
