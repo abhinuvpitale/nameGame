@@ -6,14 +6,20 @@ Share only the facts, stay away from fiction!
 
 **John Doe**
 
-*J - Just stay home
-*O - Optimise your time for best productivity from home!
-*H - Help each other
-*N - Next year is gonna be amazing!
-*
-*D - Disinfect High Use Surfaces
-*O - Okay to take a break at times!
-*E - Enrich your diet with nutritous Food
+J - Just stay home
+
+O - Optimise your time for best productivity from home!
+
+H - Help each other
+
+N - Next year is gonna be amazing!
+
+
+D - Disinfect High Use Surfaces
+
+O - Okay to take a break at times!
+
+E - Enrich your diet with nutritous Food
 
 
 
