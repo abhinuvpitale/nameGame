@@ -15,6 +15,7 @@ H - Help each other
 N - Next year is gonna be amazing!
 
 
+
 D - Disinfect High Use Surfaces
 
 O - Okay to take a break at times!
@@ -27,6 +28,6 @@ E - Enrich your diet with nutritous Food
 
 
 
-Idea derived from a Whatsapp forward on the [skshetty](https://github.com/skshetty) family group!
+*Idea derived from a Whatsapp forward on the [skshetty](https://github.com/skshetty) family group!*
 
-Great advice from [thesourabh](https://github.com/thesourabh) and a couple of friends from blacksburg!
+*Great advice a couple of friends from blacksburg!*
