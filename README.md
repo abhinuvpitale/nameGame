@@ -30,4 +30,4 @@ E - Enrich your diet with nutritous Food
 
 *Idea derived from a Whatsapp forward on the [skshetty](https://github.com/skshetty) family group!*
 
-*Great advice a couple of friends from blacksburg!*
+*Great advice from a couple of friends from blacksburg!*
