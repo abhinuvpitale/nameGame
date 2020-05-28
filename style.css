@@ -1,0 +1,25 @@
+body {
+    background: black;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 250%;
+    padding: 10px;
+    background: #6A2C3E;
+    border: 5px solid white;
+    outline: 2px solid #CF4520;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-left: 10%;
+}
